@@ -13,12 +13,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Add docker-compose alias (for Docker Compose v2)
-      run: |
-        sudo ln -s /usr/bin/docker /usr/local/bin/docker-compose
-
     - name: Build and Run
-      run: make compose-up
+      run: docker compose -f docker-compose.yaml up -d
 
     - name: Teardown
-      run: make compose-down
+      run: docker compose -f docker-compose.yaml down
