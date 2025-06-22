@@ -1,0 +1,10 @@
+# Ignore all files inside these directories
+config/
+dags/
+kafka_logs/
+logs/
+plugins/
+spark_jobs/
+
+# Ignore .env file
+.env

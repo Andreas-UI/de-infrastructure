@@ -1,0 +1,6 @@
+FROM bitnami/spark:4.0.0
+USER root
+RUN useradd -ms /bin/bash spark
+RUN mkdir -p /spark_jobs
+RUN chown -R spark:spark /opt/bitnami/spark /spark_jobs
+USER spark
