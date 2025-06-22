@@ -8,11 +8,14 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
+
+    - name: Add docker-compose alias (for Docker Compose v2)
+      run: |
+        sudo ln -s /usr/bin/docker /usr/local/bin/docker-compose
 
     - name: Build and Run
       run: make compose-up
