@@ -14,7 +14,7 @@ Each service is containerized with Docker for easy setup and teardown for protot
 
 ### Prerequisites
 
-* [Docker Desktop]([https://www.docker.com/products/docker-desktop]) must be installed and running.
+* [Docker Desktop](https://www.docker.com/products/docker-desktop) must be installed and running.
 * [Make](https://www.gnu.org/software/make/) utility should be available on your system.
 
 ### Commands

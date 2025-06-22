@@ -18,3 +18,8 @@ jobs:
 
     - name: Teardown
       run: docker compose -f docker-compose.yaml down
+
+    - name: Logs on failure
+      if: failure()
+      run: docker compose logs
+
